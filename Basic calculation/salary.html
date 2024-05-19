@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+</head>
+<body>
+    <script>
+        function calculate() {
+          var baseSalary, hra, da, ta, gross;
+          
+          baseSalary = parseInt(prompt("Enter your base salary: "));
+          hra = (10 / 100) * baseSalary;
+          da = (5 / 100) * baseSalary;
+          ta = (8 / 100) * baseSalary;
+          
+          gross = baseSalary + hra + da + ta;
+          
+          alert("Your gross salary is: " + gross);
+        }
+      </script>
+      
+      <button onclick="calculate()">Calculate Gross Salary</button>
+</body>
+</html>
