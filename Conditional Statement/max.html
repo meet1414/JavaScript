@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let n1 = parseInt(prompt("Enter n1"));
+            let n2 = parseInt(prompt("Enter n2"));
+            let n3 = parseInt(prompt("Enter n3"));
+            let n4 = parseInt(prompt("Enter n4"));
+
+            let maxNum;
+
+            if (n1 > n2) {
+                maxNum = n1;
+            } else {
+                maxNum = n2;
+            }
+
+            if (n3 > maxNum) {
+                maxNum = n3;
+            }
+
+            if (n4 > maxNum) {
+                maxNum = n4;
+            }
+
+            console.log("The max number is: " + maxNum);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = parseInt(prompt("Enter first num: "));
+        let num2 = parseInt(prompt("Enter second num: "));
+        let num3 = parseInt(prompt("Enter third num: "));
+        let num4 = parseInt(prompt("Enter fourth num: "));
+
+        if (num1 >= num2 && num1 >= num3 && num1 >= num4) {
+            console.log(num1 + " is the greatest number.");
+        } else if (num2 >= num1 && num2 >= num3 && num2 >= num4) {
+            console.log(num2 + " is the greatest number.");
+        } else if (num3 >= num1 && num3 >= num2 && num3 >= num4) {
+            console.log(num3 + " is the greatest number.");
+        } else {
+            console.log(num4 + " is the greatest number.");
+        }
+    </script>
+</body>
+
+</html>

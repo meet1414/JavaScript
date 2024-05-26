@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let dayLetter = prompt("Enter the first letter of the weekday: ");
+
+             dayLetter = dayLetter.toUpperCase();
+
+            let weekday;
+
+            if (dayLetter === 'S') {
+                weekday = "Sunday";
+            } else if (dayLetter === 'M') {
+                weekday = "Monday";
+            } else if (dayLetter === 'T') {
+                weekday = "Tuesday or Thursday"; 
+            } else if (dayLetter === 'W') {
+                weekday = "Wednesday";
+            } else if (dayLetter === 'F') {
+                weekday = "Friday";
+            } else {
+                weekday = "Saturday"; 
+            }
+
+            console.log(`${weekday}.`);
+
+    </script>
+</body>
+</html>

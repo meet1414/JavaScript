@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const angle1 = parseInt(prompt("Enter the first angle:"));
+            const angle2 = parseInt(prompt("Enter the second angle:"));
+            const angle3 = parseInt(prompt("Enter the third angle:"));
+
+            const sumOfAngles = angle1 + angle2 + angle3;
+
+            if (sumOfAngles === 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+                console.log("The angles forms a valid triangle.");
+            } else {
+                console.log("The angles do not forms a valid triangle.");
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let phy = parseInt(prompt("Enter phy marks: "));
+        let che = parseInt(prompt("Enter che marks: "));
+        let bio = parseInt(prompt("Enter bio marks: "));
+        let maths = parseInt(prompt("Enter maths marks: "));
+        let comp = parseInt(prompt("Enter comp marks: "));
+
+        sum = phy + che + bio + maths + comp
+        console.log("total marks", sum)
+        percentage = sum / 5
+        console.log('average=', percentage)
+
+        if (percentage >= 90) {
+            console.log("Grade A")
+        }
+        else if (percentage >= 80) {
+            console.log("Grade B")
+        }
+        else if (percentage >= 70) {
+            console.log("Grade C")
+        }
+        else if(percentage >= 60){
+            console.log("Grade D");
+        }
+         else if (percentage >= 50) {
+            console.log("Grade E");
+        }
+        else  {
+            console.log("You are fail")
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let a = parseInt(prompt("Enter the first number:"));
+            let b = parseInt(prompt("Enter the second number:"));
+            let choice = prompt("Enter the CHOICE (+, -, *, /):");
+
+            let result;
+            switch (choice) {
+                case '+':
+                    result = a + b;
+                    break;
+                case '-':
+                    result = a - b;
+                    break;
+                case '*':
+                    result = a * b;
+                    break;
+                case '/':
+                    result = a / b;
+                    break;
+                default:
+                    result = "Invalid";
+            }
+            console.log(`${result}`);
+    </script>
+</body>
+</html>
