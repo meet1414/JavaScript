@@ -9,18 +9,17 @@
 
 <body>
     <script>
-        function Number(num) {
+        function checkNumber(num) {
             if (num > 0) {
-                console.log(num + " is a positive number");
-            } else if (num < 0) {
-                console.log(num + " is a negative number");
-            } else {
-                console.log(num + " is zero");
+                alert("The number is Positive");
+            } 
+            else if (num < 0) {
+                alert("The number is Negative");
             }
         }
-        Number(50);
-        Number(-31);
-        Number(0);
+
+        let n = parseInt(prompt("Enter a Number"));
+        checkNumber(n);
 
     </script>
 </body>
