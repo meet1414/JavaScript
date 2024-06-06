@@ -9,41 +9,27 @@
 
 <body>
     <script>
-        function GreatertNum(a, b, c, d) {
-            if (a > b) {
-                if (a > c) {
-                    if (a > d) {
-                        console.log(a);
-                    } else {
-                        console.log(d);
-                    }
-                } else {
-                    if (c > d) {
-                        console.log(c);
-                    } else {
-                        console.log(d);
-                    }
-                }
-            } else {
-                if (b > c) {
-                    if (b > d) {
-                        console.log(b);
-                    } else {
-                        console.log(d);
-                    }
-                } else {
-                    if (c > d) {
-                        console.log(c);
-                    } else {
-                        console.log(d);
-                    }
-                }
+        function findGreatest(a, b, c, d) {
+
+            if (a>=b && a>=c && a>=d) {
+                alert(a+" is Greatest");
+            } 
+            else if (b>=a && b>=c && b>=d) {
+                alert(b+" is Greatest");
+            } 
+            else if (c>=a && c>=b && c>=d) {
+                alert(c+" is Greatest");
+            } 
+            else {
+                alert(d+" is Greatest");
             }
         }
-        GreatertNum(310, 50, 0, 15);
+            let a = parseInt(prompt("Enter First Number"));
+            let b = parseInt(prompt("Enter Second Number"));
+            let c = parseInt(prompt("Enter Third Number"));
+            let d = parseInt(prompt("Enter Fourth Number"));
 
-        
-
+            findGreatest(a, b, c, d);
     </script>
 </body>
 
