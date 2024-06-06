@@ -9,15 +9,18 @@
 
 <body>
     <script>
+        function swap(a, b) {
+            console.log("Before swapping: a =", a, "b =", b);
+            let temp = a;
+            a = b;
+            b = temp;
+            console.log("After swapping: a =", a, "b =", b);
+        }
 
-        let a = 7;
-        let b = 5;
+        let a = parseInt(prompt("Enter value of A"));
+        let b = parseInt(prompt("Enter value of B"));
 
-        [b, a] = [a, b];
-
-        console.log("a =", a);
-        console.log("b =", b);
-
+        swap(a, b);
     </script>
 </body>
 
