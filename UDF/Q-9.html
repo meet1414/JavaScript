@@ -8,20 +8,22 @@
 </head>
 
 <body>
-    <script>
-     function triangles(angle1,angle2,angle3) {
-        if(angle1+angle2+angle3 === 180){
-            console.log("Triangle is valid");
+ <script>
+        const validTriangle = (a1, a2, a3) => { 
+            let sum = a1 + a2 + a3;
+            if (sum === 180) {
+                alert("The triangle is valid.");
+            } 
+            else {
+                alert("The triangle is not valid.");
+            }
         }
-        else{
-            console.log("Not Valid");
-        }
-     }
-     
-     triangles(40,80,20)
-     triangles(60,60,60)
 
+        let a1 = parseInt(prompt("Enter First Angle of Triangle"));
+        let a2 = parseInt(prompt("Enter First Angle of Triangle"));
+        let a3 = parseInt(prompt("Enter First Angle of Triangle"));
 
+        validTriangle(a1, a2, a3);
     </script>
 </body>
 
